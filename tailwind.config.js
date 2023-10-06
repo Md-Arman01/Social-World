@@ -7,6 +7,6 @@ export default {
   theme: {
     extend: {},
   },
-  lugins: [require("daisyui")],
+  plugins: [require("daisyui")],
 }
 

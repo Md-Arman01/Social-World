@@ -9,11 +9,13 @@ import Login from "../Components/Login/Login";
 import Resister from "../Components/Resister/Resister";
 import CardDetails from "../Components/CardDetails/CardDetails";
 import PrivateRoutes from "../Components/PrivateRoutes/PrivateRoutes";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
   
 const Router = createBrowserRouter([
     {
       path: "/",
       element: <Layout></Layout>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/',

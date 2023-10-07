@@ -1,3 +1,4 @@
+import Services from "./Services/Services";
 import Slider from "./Slider/Slider";
 import YogaReasons from "./YogaReasons/YogaReasons";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <YogaReasons></YogaReasons>
+            <Services></Services>
         </div>
     );
 };

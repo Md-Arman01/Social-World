@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/J2RwQyy/full-shot-fit-man-training-abs.jpg",
+    "name": "YogaFit Barre",
+    "price": 1500.99,
+    "description": "YogaFit Barre is a fitness program that combines ballet-inspired movements with yoga principles to improve strength, flexibility, and balance in a low-impact, mind-body workout."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/dmGJ7W4/young-man-making-sport-exercises-home.jpg",
+    "name": "YogaFit Restore",
+    "price": 1100.99,
+    "description": "YogaFit Restore is a gentle and restorative yoga practice designed to promote relaxation, reduce stress, and enhance flexibility. It typically involves slow, soothing movements and deep stretches, making it ideal for relieving tension and calming the mind."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/dM7WTKM/handsome-fitness-man-sportswear-doing-stretching-while-preparing-serious-exercise-modern-city-agains.jpg",
+    "name": "YogaFit Core",
+    "price": 900.99,
+    "description": "YogaFit Core is a fitness program focused on strengthening the core muscles through a combination of yoga-inspired movements and traditional core exercises. It aims to enhance core stability, improve posture, and promote overall abdominal strength and toning."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/wC7XT4r/man-meditating-holding-hands-mudra-gesture-class.jpg",
+    "name": "YogaFit for Beginners",
+    "price": 500.99,
+    "description": "YogaFit for Beginners is a beginner-friendly yoga program designed to introduce newcomers to the practice of yoga. It typically includes basic yoga poses, gentle stretches, and fundamental breathing techniques. This program aims to improve flexibility, reduce stress, and promote a sense of relaxation and well-being for those new to yoga."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/xqhSKq5/trainer-assisting-group-people-with-pashimottanasana-exercise.jpg",
+    "name": "Private & Group Lessons",
+    "price": 2000.99,
+    "description": " Private lessons involve one-on-one instruction, where an individual receives personalized guidance and coaching from an instructor or teacher. These lessons are tailored to the specific needs, goals, and skill level of the learner."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/5x450Lv/close-up-boy-wearing-white-socks-stretching-his-hand.jpg",
+    "name": "KidsYoga",
+    "price": 1600.99,
+    "description": "KidsYoga is a specialized yoga class designed specifically for children. It introduces young participants to the practice of yoga in a fun, engaging, and age-appropriate manner."
+  }
+]

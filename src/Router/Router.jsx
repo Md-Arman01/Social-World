@@ -8,6 +8,7 @@ import Classes from "../Components/Pages/Classes/Classes";
 import Login from "../Components/Login/Login";
 import Resister from "../Components/Resister/Resister";
 import CardDetails from "../Components/CardDetails/CardDetails";
+import PrivateRoutes from "../Components/PrivateRoutes/PrivateRoutes";
   
 const Router = createBrowserRouter([
     {
@@ -24,11 +25,11 @@ const Router = createBrowserRouter([
         },
         {
             path: '/profile',
-            element: <Profile></Profile>
+            element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
         },
         {
             path: '/classes',
-            element: <Classes></Classes>
+            element: <PrivateRoutes><Classes></Classes></PrivateRoutes> 
         },
         {
             path: '/login',
@@ -41,7 +42,7 @@ const Router = createBrowserRouter([
         {
             path: '/details/:id',
             loader: ()=> fetch('/public/data/services.json'),
-            element: <CardDetails></CardDetails>
+            element: <PrivateRoutes><CardDetails></CardDetails></PrivateRoutes>
         },
       ]
     },

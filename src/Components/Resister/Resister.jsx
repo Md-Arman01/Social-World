@@ -2,12 +2,16 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../ContextProvider/AuthContextProvider";
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
+import { updateProfile } from "firebase/auth";
+import auth from "../../Firebase/Firebase.confiq";
 
 const Resister = () => {
   const [resisterError, setResisterError] = useState('');
   const { createUser } = useContext(AuthContext);
   const handleResister = (e) => {
     e.preventDefault();
+    const name = e.target.name.value;
+    const photoURL = e.target.photoURL.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
     const checked = e.target.checkbox.checked;
@@ -29,6 +33,15 @@ const Resister = () => {
     
     createUser(email, password)
       .then((result) => {
+        updateProfile(auth.currentUser, {
+          displayName: name, photoURL: photoURL
+        }).then(() => {
+          // Profile updated!
+          // ...
+        }).catch((error) => {
+          // An error occurred
+          // ...
+        });
         swal("Resister successfully!", "You can access all facilities", "success");
       })
       .catch((error) => {
@@ -61,7 +74,6 @@ const Resister = () => {
               <input
                 type="text"
                 name="photoURL"
-                required
                 className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-[#97245F] focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                 placeHolder=" "
               />

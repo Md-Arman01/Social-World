@@ -1,7 +1,29 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../ContextProvider/AuthContextProvider";
 
 
 const Login = () => {
+  const [loginError, setLoginError] = useState('')
+  const {loginUser} = useContext(AuthContext)
+
+  const handleLogin = (e) => {
+    e.preventDefault()
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    setLoginError('')
+    loginUser(email, password)
+    .then((result) => {
+      console.log(result.user)
+    })
+    .catch((error) => {
+      setLoginError(error.code)
+    });
+
+
+  }
+
+
     return (
         <div className="flex justify-center items-center h-screen">
       <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -10,7 +32,7 @@ const Login = () => {
             Login your account
           </h3>
         </div>
-        <form>
+        <form onSubmit={handleLogin}>
         <div className="flex flex-col gap-4 p-6">
           <div className="relative h-11 w-full min-w-[200px]">
             <input
@@ -37,7 +59,10 @@ const Login = () => {
             </label>
           </div>
           <div className="-ml-2.5">
-            <h1 className="text-red-500 px-5">password not match</h1>
+            {
+              loginError && 
+            <h1 className="text-red-500 px-5">{loginError}</h1>
+            }
           </div>
         </div>
         <div className="p-6 pt-0">

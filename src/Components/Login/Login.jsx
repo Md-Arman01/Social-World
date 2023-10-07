@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../ContextProvider/AuthContextProvider";
 import { BsGoogle } from 'react-icons/bs';
 import { BiLogoGithub } from 'react-icons/bi';
@@ -8,6 +8,9 @@ import { BiLogoGithub } from 'react-icons/bi';
 const Login = () => {
   const [loginError, setLoginError] = useState('')
   const {loginUser, googleLogin, githubLogin} = useContext(AuthContext)
+  const location = useLocation()
+  const navigate = useNavigate()
+  console.log(location)
 
   const handleLogin = (e) => {
     e.preventDefault()
@@ -17,16 +20,19 @@ const Login = () => {
     loginUser(email, password)
     .then((result) => {
       console.log(result.user)
+      navigate(location?.state ? location.state : '/')
     })
     .catch((error) => {
       setLoginError(error.code)
     });
+
 
   }
   const handleGoogleLogin = () => {
     googleLogin()
     .then((result) => {
       console.log(result.user)
+      navigate(location?.state ? location.state : '/')
     }).catch((error) => {
       setLoginError(error.message)
     });
@@ -35,6 +41,7 @@ const Login = () => {
     githubLogin()
     .then((result) => {
       console.log(result.user)
+      navigate(location?.state ? location.state : '/')
     }).catch((error) => {
       setLoginError(error.message)
     });

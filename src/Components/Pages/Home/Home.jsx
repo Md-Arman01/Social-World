@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import Services from "./Services/Services";
 import Slider from "./Slider/Slider";
 import Teachers from "./Teachars/Teachers";
@@ -10,6 +11,7 @@ const Home = () => {
             <YogaReasons></YogaReasons>
             <Services></Services>
             <Teachers></Teachers>
+            <Footer></Footer>
         </div>
     );
 };

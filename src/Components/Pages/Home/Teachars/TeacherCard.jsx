@@ -11,7 +11,7 @@ const TeacherCard = () => {
           Rodney Yee
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-            Modaretor
+            Senior Instructor
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ const TeacherCard = () => {
           Sri Dharma Mittra
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-            Modaretor
+            Senior Instructor
           </p>
         </div>
       </div>
@@ -39,7 +39,7 @@ const TeacherCard = () => {
           Alan Finger
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-            Modaretor
+            Senior Instructor
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@ const TeacherCard = () => {
           ichard Freeman
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-            Modaretor
+            Senior Instructor
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ const TeacherCard = () => {
           Tim Miller
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-            Modaretor
+            Senior Instructor
           </p>
         </div>
       </div>
@@ -81,7 +81,7 @@ const TeacherCard = () => {
           David Swenson
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-            Modaretor
+            Senior Instructor
           </p>
         </div>
       </div>

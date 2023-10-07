@@ -1,4 +1,40 @@
+import { useContext, useState } from "react";
+import { AuthContext } from "../ContextProvider/AuthContextProvider";
+import swal from 'sweetalert';
+import { Link } from "react-router-dom";
+
 const Resister = () => {
+  const [resisterError, setResisterError] = useState('');
+  const { createUser } = useContext(AuthContext);
+  const handleResister = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const checked = e.target.checkbox.checked;
+    setResisterError('')
+
+    if(password.length < 6) {
+      setResisterError('Please give me minimum 6 characters')
+      return
+    }else if(!/[A-Z]/.test(password)){
+      setResisterError('Please give me minimum one capital letter')
+      return
+    }else if(!/[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\|]/.test(password)){
+      setResisterError('Please give me minimum one special character')
+      return
+    }else if (!checked) {
+      setResisterError("Please accept our Terms and Condition");
+      return;
+    }
+    
+    createUser(email, password)
+      .then((result) => {
+        swal("Resister successfully!", "You can access all facilities", "success");
+      })
+      .catch((error) => {
+        setResisterError(error.message)
+      });
+  };
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -7,7 +43,7 @@ const Resister = () => {
             Register your account
           </h3>
         </div>
-        <form>
+        <form onSubmit={handleResister}>
           <div className="flex flex-col gap-4 p-6">
             <div className="relative h-11 w-full min-w-[200px]">
               <input
@@ -58,7 +94,10 @@ const Resister = () => {
               </label>
             </div>
             <div className="-ml-2.5">
-            <h1 className="text-red-500 px-5">password minimus 6 letter and one more capital letter and also special carecter</h1>
+              {
+                resisterError &&
+              <h1 className="text-red-500 px-5">{resisterError}</h1>
+              }
               <div className="inline-flex items-center">
                 <label
                   className="relative flex cursor-pointer items-center rounded-full p-3"
@@ -90,6 +129,7 @@ const Resister = () => {
                   Accept Term & Conditions
                 </label>
               </div>
+              
             </div>
           </div>
           <div className="p-6 pt-0">
@@ -99,7 +139,16 @@ const Resister = () => {
               data-ripple-light="true">
               Register
             </button>
+            <p className="mt-6 flex justify-center font-sans text-sm font-light leading-normal text-inherit antialiased">
+              have an account?
+            <Link
+              to="/login"
+              className="ml-1 block font-sans text-sm font-bold leading-normal text-[#97245F] antialiased">
+              Login
+            </Link>
+          </p>
           </div>
+          
         </form>
       </div>
     </div>

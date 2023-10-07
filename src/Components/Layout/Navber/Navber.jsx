@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import userLogo from '../../../assets/user.png'
 import logo from "../../../../public/images/logo.png";
 import Menu from "./Menu";
 
@@ -18,10 +19,12 @@ const Navber = () => {
             {menuItems}
           </ul>
           </div>
-          <div>
+          <div className="flex items-center gap-5">
+            <h1 className="text-black text-lg font-medium">Arman</h1>
+            <img className="w-10" src={userLogo} alt="" />
             <Link to='/login'>
               <button
-                className="block w-full select-none rounded-lg bg-gradient-to-tr from-[#97245F] to-[#97245F] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="block w-full select-none rounded-lg bg-gradient-to-tr from-[#97245F] to-[#97245F] py-3 px-10 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
                 data-ripple-light="true">
                 Login

@@ -51,7 +51,6 @@ const Login = () => {
             Don't have an account?
             <Link
               to="/resister"
-              href="#signup"
               className="ml-1 block font-sans text-sm font-bold leading-normal text-[#97245F] antialiased">
               Register
             </Link>

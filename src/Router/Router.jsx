@@ -5,6 +5,8 @@ import Home from "../Components/Pages/Home/Home";
 import Features from "../Components/Pages/Features/Features";
 import Profile from "../Components/Pages/Profile/Profile";
 import Classes from "../Components/Pages/Classes/Classes";
+import Login from "../Components/Login/Login";
+import Resister from "../Components/Resister/Resister";
   
 const Router = createBrowserRouter([
     {
@@ -26,6 +28,14 @@ const Router = createBrowserRouter([
         {
             path: '/classes',
             element: <Classes></Classes>
+        },
+        {
+            path: '/login',
+            element: <Login></Login>
+        },
+        {
+            path: '/resister',
+            element: <Resister></Resister>
         },
       ]
     },

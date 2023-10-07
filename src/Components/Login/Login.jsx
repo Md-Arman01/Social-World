@@ -1,11 +1,13 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../ContextProvider/AuthContextProvider";
+import { BsGoogle } from 'react-icons/bs';
+import { BiLogoGithub } from 'react-icons/bi';
 
 
 const Login = () => {
   const [loginError, setLoginError] = useState('')
-  const {loginUser} = useContext(AuthContext)
+  const {loginUser, googleLogin, githubLogin} = useContext(AuthContext)
 
   const handleLogin = (e) => {
     e.preventDefault()
@@ -20,6 +22,22 @@ const Login = () => {
       setLoginError(error.code)
     });
 
+  }
+  const handleGoogleLogin = () => {
+    googleLogin()
+    .then((result) => {
+      console.log(result.user)
+    }).catch((error) => {
+      setLoginError(error.message)
+    });
+  }
+  const handleGithubLogin = () =>{
+    githubLogin()
+    .then((result) => {
+      console.log(result.user)
+    }).catch((error) => {
+      setLoginError(error.message)
+    });
 
   }
 
@@ -72,7 +90,19 @@ const Login = () => {
             data-ripple-light="true">
             Login
           </button>
-          <p className="mt-6 flex justify-center font-sans text-sm font-light leading-normal text-inherit antialiased">
+        
+        </div>
+        </form>
+        <h1 className="text-center font-medium text-lg -my-4">or</h1>
+        <div className="flex flex-col space-y-2 px-6 mt-5">
+          <button onClick={handleGoogleLogin} className="btn btn-outline btn-info normal-case">
+            <BsGoogle></BsGoogle>Login With Google
+          </button>
+          <button onClick={handleGithubLogin} className="btn btn-outline normal-case">
+            <BiLogoGithub className="text-lg"></BiLogoGithub>Login With Github
+          </button>
+        </div>
+          <p className="my-4 flex justify-center font-sans text-sm font-light leading-normal text-inherit antialiased">
             Don't have an account?
             <Link
               to="/resister"
@@ -80,8 +110,6 @@ const Login = () => {
               Register
             </Link>
           </p>
-        </div>
-        </form>
       </div>
     </div>
 

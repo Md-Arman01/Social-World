@@ -2,7 +2,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import Layout from "../Components/Layout/Layout";
 import Home from "../Components/Pages/Home/Home";
-import Features from "../Components/Pages/Features/Features";
 import Profile from "../Components/Pages/Profile/Profile";
 import Classes from "../Components/Pages/Classes/Classes";
 import Login from "../Components/Login/Login";
@@ -10,6 +9,7 @@ import Resister from "../Components/Resister/Resister";
 import CardDetails from "../Components/CardDetails/CardDetails";
 import PrivateRoutes from "../Components/PrivateRoutes/PrivateRoutes";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import AboutUs from "../Components/Pages/AboutUs/AboutUs";
   
 const Router = createBrowserRouter([
     {
@@ -23,7 +23,7 @@ const Router = createBrowserRouter([
         },
         {
             path: '/features',
-            element: <Features></Features>
+            element: <AboutUs></AboutUs>
         },
         {
             path: '/profile',

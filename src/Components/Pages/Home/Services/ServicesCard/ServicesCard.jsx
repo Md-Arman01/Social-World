@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ServicesCard = ({ services }) => {
-  const { image, name, price, description } = services || {};
-  console.log(services);
+  const {id, image, name, price, description } = services || {};
   return (
     <div className="">
      <div className="relative flex flex-row h-[350px] rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -23,6 +23,7 @@ const ServicesCard = ({ services }) => {
     <div className="flex items-center justify-between">
       <p className="text-lg text-[#97245F] font-medium">$ {price}</p>
 
+      <Link to={`/details/${id}`}>
       <button
         className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-700 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
@@ -44,6 +45,7 @@ const ServicesCard = ({ services }) => {
           ></path>
         </svg>
       </button>
+      </Link>
     </div>
   
     

@@ -7,9 +7,7 @@ import YogaReasons from "./YogaReasons/YogaReasons";
 const Home = () => {
     return (
         <div>
-            <div className="mt-[125px]">
             <Slider></Slider>
-            </div>
             <YogaReasons></YogaReasons>
             <Services></Services>
             <Teachers></Teachers>

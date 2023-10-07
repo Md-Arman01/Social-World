@@ -7,6 +7,7 @@ import Profile from "../Components/Pages/Profile/Profile";
 import Classes from "../Components/Pages/Classes/Classes";
 import Login from "../Components/Login/Login";
 import Resister from "../Components/Resister/Resister";
+import CardDetails from "../Components/CardDetails/CardDetails";
   
 const Router = createBrowserRouter([
     {
@@ -36,6 +37,11 @@ const Router = createBrowserRouter([
         {
             path: '/resister',
             element: <Resister></Resister>
+        },
+        {
+            path: '/details/:id',
+            loader: ()=> fetch('/public/data/services.json'),
+            element: <CardDetails></CardDetails>
         },
       ]
     },

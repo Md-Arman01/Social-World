@@ -21,7 +21,7 @@ const Navber = () => {
 
   return (
     <div>
-      <nav className="fixed top-0 inset-0 z-10 block h-max w-full max-w-full rounded-none border border-white/80 bg-white bg-opacity-80 py-2 px-4 text-white shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+      <nav className="inset-0 z-10 block h-max w-full max-w-full rounded-none border  bg-white bg-opacity-80 py-2 px-4 text-white shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
         <div className="flex  items-center">
           <div className="flex w-full justify-between items-center">
           <div>

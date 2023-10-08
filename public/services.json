@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "image": "https://i.ibb.co/J2RwQyy/full-shot-fit-man-training-abs.jpg",
-    "name": "YogaFit Barre",
-    "price": 1500.99,
-    "description": "YogaFit Barre is a fitness program that combines ballet-inspired movements with yoga principles to improve strength, flexibility, and balance in a low-impact, mind-body workout."
+    "image": "https://i.ibb.co/7YsSy5v/couple-dancing-ther-wedding.jpg",
+    "name": "Weddings",
+    "price": 8000.99,
+    "description": "A wedding is a formal ceremony that marks the union of two individuals in marriage. It is a significant and joyous event where couples publicly declare their commitment and love for each other in the presence of family and friends. Weddings often include traditional rituals, exchange of vows and rings, and may be conducted in religious or secular settings. They are usually followed by a celebratory reception featuring food, dancing, and entertainment. "
   },
   {
     "id": 2,
-    "image": "https://i.ibb.co/dmGJ7W4/young-man-making-sport-exercises-home.jpg",
-    "name": "YogaFit Restore",
-    "price": 1100.99,
-    "description": "YogaFit Restore is a gentle and restorative yoga practice designed to promote relaxation, reduce stress, and enhance flexibility. It typically involves slow, soothing movements and deep stretches, making it ideal for relieving tension and calming the mind."
+    "image": "https://i.ibb.co/51FZCbC/group-laughing-kids-having-fun-birthday-party-isolated-white.jpg",
+    "name": "Birthday Parties",
+    "price": 2500.99,
+    "description": "A birthday party is a wonderful and cherished tradition that commemorates the anniversary of a person's birth. It is a day filled with joy, celebration, and a sense of togetherness as friends and family gather to honor and make the birthday person feel special. The essence of a birthday party lies in its ability to create lasting memories and offer a sense of significance to the individual being celebrated."
   },
   {
     "id": 3,
-    "image": "https://i.ibb.co/dM7WTKM/handsome-fitness-man-sportswear-doing-stretching-while-preparing-serious-exercise-modern-city-agains.jpg",
-    "name": "YogaFit Core",
-    "price": 900.99,
-    "description": "YogaFit Core is a fitness program focused on strengthening the core muscles through a combination of yoga-inspired movements and traditional core exercises. It aims to enhance core stability, improve posture, and promote overall abdominal strength and toning."
+    "image": "https://i.ibb.co/Hh3JvMw/elegant-couple-spend-time-restaurant.jpg",
+    "name": "Anniversaries",
+    "price": 4000.99,
+    "description": "An anniversary is a specific date or event that marks the passage of a year since a significant or noteworthy occurrence. Anniversaries are often celebrated to commemorate and reflect upon important events, relationships, or milestones in a person's life, a couple's journey, or an organization's history. These occasions can vary widely in nature and significance, and they can be personal, cultural, or historical.This is a celebration of the day a married couple exchanged vows and officially began their marriage."
   },
   {
     "id": 4,
-    "image": "https://i.ibb.co/wC7XT4r/man-meditating-holding-hands-mudra-gesture-class.jpg",
-    "name": "YogaFit for Beginners",
-    "price": 500.99,
-    "description": "YogaFit for Beginners is a beginner-friendly yoga program designed to introduce newcomers to the practice of yoga. It typically includes basic yoga poses, gentle stretches, and fundamental breathing techniques. This program aims to improve flexibility, reduce stress, and promote a sense of relaxation and well-being for those new to yoga."
+    "image": "https://i.ibb.co/Y8B0pZ3/friends-celebrating-christmas-clinking-champagne-glasses.jpg",
+    "name": "Engagement Parties",
+    "price": 5500.99,
+    "description": "An engagement party is a celebratory event held to mark and announce the engagement of a couple who have recently become engaged to be married. It's a pre-wedding festivity that brings together family and friends to share in the joy and excitement of the couple's commitment to one another.  Engagement parties are about celebrating the love and commitment of the engaged couple. They often feature toasts, speeches, and heartfelt words from friends and family, expressing their support and best wishes for the couple's future together."
   },
   {
     "id": 5,
-    "image": "https://i.ibb.co/xqhSKq5/trainer-assisting-group-people-with-pashimottanasana-exercise.jpg",
-    "name": "Private & Group Lessons",
-    "price": 2000.99,
-    "description": " Private lessons involve one-on-one instruction, where an individual receives personalized guidance and coaching from an instructor or teacher. These lessons are tailored to the specific needs, goals, and skill level of the learner."
+    "image": "https://i.ibb.co/B34GBYk/cheerful-senior-couple-happy-about-their-date-husband-giving-flower-his-wife-enjoying-retirement.jpg",
+    "name": "Retirement Parties",
+    "price": 4900.99,
+    "description": "A retirement party is a celebratory event held to honor an individual who is retiring from their career or profession after many years of dedicated service. These parties are an opportunity for colleagues, friends, and family to come together to celebrate the retiree's accomplishments, express appreciation for their contributions, and wish them well in their retirement years. Retirement parties can be hosted in a variety of locations, such as restaurants, banquet halls, or the retiree's workplace. The choice of venue and decor often reflects the retiree's preferences and the tone of the celebration."
   },
   {
     "id": 6,
-    "image": "https://i.ibb.co/6t58ZXK/close-up-boy-wearing-white-socks-stretching-his-hand.jpg",
-    "name": "KidsYoga",
-    "price": 1600.99,
-    "description": "KidsYoga is a specialized yoga class designed specifically for children. It introduces young participants to the practice of yoga in a fun, engaging, and age-appropriate manner."
+    "image": "https://i.ibb.co/M6yS3Ct/replicate-prediction-5udv7tbbltq2ys6xudpbcxrkha.png",
+    "name": "Baby shower",
+    "price": 2600.99,
+    "description": "A baby shower is a joyful and celebratory event held to honor and support an expectant mother (or parents) as they prepare to welcome a new baby into their family. These gatherings are typically organized by friends or family members of the parents-to-be and are intended to provide emotional support, gifts, and well-wishes for the upcoming arrival of the baby. Baby showers are an opportunity to celebrate the impending arrival of a new baby and the journey into parenthood. "
   }
 ]

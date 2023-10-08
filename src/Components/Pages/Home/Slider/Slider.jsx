@@ -1,49 +1,98 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-cube';
-import 'swiper/css/pagination';
-import './styles.css';
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./styles.css";
+
 // import required modules
-import { EffectCube, Pagination } from 'swiper/modules';
-import image1 from '../../../../../public/images/img1.jpg'
-import image2 from '../../../../../public/images/img2.jpg'
-import image3 from '../../../../../public/images/img3.jpg'
-import image4 from '../../../../../public/images/img4.jpg'
+import { Pagination } from "swiper/modules";
 
 const Slider = () => {
-    return (
-        <>
+  return (
+    <>
       <Swiper
-        effect={'cube'}
-        grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
+        pagination={{
+          dynamicBullets: true,
         }}
-        pagination={true}
-        modules={[EffectCube, Pagination]}
-        className="mySwiper"
-      >
+        modules={[Pagination]}
+        className="mySwiper">
         <SwiperSlide>
-          <img src={image1} />
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co/2tMF8dd/people-enjoying-burnt-orange-wedding.jpg)",
+            }}>
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-5xl font-bold">Weddings</h1>
+                <p className="mb-5">
+                A wedding is a formal ceremony that marks the union of two individuals in marriage. 
+                </p>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image2} />
+        <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co/C1zrRNx/colleagues-having-fun-business-event.jpg)",
+            }}>
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-5xl font-bold">Birthday Parties</h1>
+                <p className="mb-5">
+                A birthday party is a joyful celebration held to mark the anniversary of a person's birth. 
+                </p>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image3} />
+        <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co/fF5F4Ys/couples-celebrating-birthday.jpg)",
+            }}>
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-5xl font-bold">Anniversaries</h1>
+                <p className="mb-5">
+                An anniversary is a special and meaningful occasion that commemorates a significant event or milestone, such as a wedding, the founding of a company, or the start of a relationship. 
+                </p>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image4} />
+        <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co/ykrtYcb/beautiful-senior-birthday-party.jpg)",
+            }}>
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-5xl font-bold">Retirement Parties</h1>
+                <p className="mb-5">
+                A retirement party is a festive event held to honor an individual who is retiring from their career or professional life after years of dedicated work. 
+                </p>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
-      
     </>
-    );
+  );
 };
 
 export default Slider;

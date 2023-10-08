@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import userLogo from '../../../assets/user.png'
-import logo from "../../../../public/images/logo.png";
+import logo from "../../../../public/images/Logo.png";
 import Menu from "./Menu";
 import { useContext } from "react";
 import { AuthContext } from "../../ContextProvider/AuthContextProvider";
@@ -8,7 +8,6 @@ import { AuthContext } from "../../ContextProvider/AuthContextProvider";
 const Navber = () => {
   const menuItems = <Menu></Menu>;
   const {user, logoutUser} = useContext(AuthContext)
-  console.log(user)
 
   const handleLogout =()=> {
     logoutUser()
@@ -25,7 +24,7 @@ const Navber = () => {
         <div className="flex  items-center">
           <div className="flex w-full justify-between items-center">
           <div>
-            <img className="w-44" src={logo} alt="" />
+            <img className="w-28" src={logo} alt="" />
           </div>
           <div> 
           <ul className="ml-auto mr-8 hidden items-center gap-6 lg:flex">

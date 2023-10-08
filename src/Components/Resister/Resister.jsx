@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../ContextProvider/AuthContextProvider";
 import swal from 'sweetalert';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.confiq";
 
 const Resister = () => {
+  const navigate = useNavigate()
   const [resisterError, setResisterError] = useState('');
   const { createUser } = useContext(AuthContext);
   const handleResister = (e) => {
@@ -43,6 +44,7 @@ const Resister = () => {
           // ...
         });
         swal("Resister successfully!", "You can access all facilities", "success");
+        navigate('/')
       })
       .catch((error) => {
         setResisterError(error.message)

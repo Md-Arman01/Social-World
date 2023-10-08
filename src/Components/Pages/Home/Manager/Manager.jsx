@@ -5,8 +5,8 @@ const Teachers = () => {
   return (
     <div className="my-20">
       <div>
-      <h1 className="text-center font-medium text-5xl text-[#45445A] mb-5">
-      Our Team <span className="text-[#97245F]">Manager</span>
+      <h1 className="text-center font-semibold text-5xl text-[#45445A] mb-5">
+      Our Team <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Manager</span>
       </h1>
       <div className="flex items-center gap-2 justify-center">
         <div>
@@ -17,7 +17,7 @@ const Teachers = () => {
         <hr className="w-[400px]" />
         </div>
       </div>
-      <p className="text-[#97245F] text-lg text-center mb-10">Best Manager Are Here For You</p>
+      <p className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text text-lg text-center mb-10">Best Manager Are Here For You</p>
     </div>
       <Marquee className="gap-5" pauseOnHover={true}>
         <TeacherCard></TeacherCard>

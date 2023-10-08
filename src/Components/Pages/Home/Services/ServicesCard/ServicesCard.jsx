@@ -14,18 +14,18 @@ const ServicesCard = ({ services }) => {
     />
   </div>
   <div className="p-6">
-    <h4 className="mb-2 block font-sans text-2xl font-semibold text-pink-700 leading-snug tracking-normal text-blue-gray-900 antialiased">
+    <h4 className="mb-2 block font-sans text-2xl font-semibold text-[#FF4804] leading-snug tracking-normal text-blue-gray-900 antialiased">
     {name}
     </h4>
     <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-500 antialiased h-48">
       {description.slice(0,250)}
     </p>
     <div className="flex items-center justify-between">
-      <p className="text-lg text-[#97245F] font-medium">$ {price}</p>
+      <p className="text-lg text-[#FF4804] font-medium">$ {price}</p>
 
       <Link to={`/details/${id}`}>
       <button
-        className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-700 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#FF4804] transition-all hover:bg-[#FF4804]/10 active:bg-[#FF4804]/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
       >
         More Details

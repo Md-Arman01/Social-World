@@ -75,7 +75,11 @@ const Profile = () => {
             </div>
                 <h1 className="text-base text-gray-500 mb-2">Description</h1>
             <textarea className="textarea textarea-bordered" placeholder="Bio"></textarea>
-            <button className="btn btn-accent w-40 mt-4 mx-auto">Update Acount</button>
+            <button
+            className="w-40 mt-4  mx-auto normal-case block select-none rounded-lg bg-gradient-to-tr from-[#FFA828] to-[#FF4804] py-3 px-6 text-center align-middle font-sans text-sm font-bold  text-white shadow-md shadow-[#FFA828]/20 transition-all hover:shadow-lg hover:shadow-[#FFA828]/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            >
+            Update Acount
+          </button>
 
         </div>
       </div>

@@ -33,13 +33,13 @@ const Navber = () => {
           </div>
           <div className="flex items-center gap-5">
             
-            <h1 className="text-black text-lg font-medium">{user && user.displayName}</h1>
+            <h1 className="text-black text-lg font-medium bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">{user && user.displayName}</h1>
             
             <img className="w-12 h-12 object-cover rounded-full" src={user ? user.photoURL : userLogo} alt="" />
             {
               user ? <button
               onClick={handleLogout}
-              className="block  select-none rounded-lg bg-gradient-to-tr from-[#97245F] to-[#97245F] py-3 px-5 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="block select-none rounded-lg bg-gradient-to-tr from-[#FFA828] to-[#FF4804] py-3 px-5 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-[#FFA828]/20 transition-all hover:shadow-lg hover:shadow-[#FFA828]/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
               data-ripple-light="true">
               Login out
@@ -47,7 +47,7 @@ const Navber = () => {
             :
             <Link to='/login'>
               <button
-                className="block  select-none rounded-lg bg-gradient-to-tr from-[#97245F] to-[#97245F] py-3 px-10 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="block  select-none rounded-lg bg-gradient-to-tr from-[#FFA828] to-[#FF4804] py-3 px-10 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-[#FFA828]/20 transition-all hover:shadow-lg hover:shadow-[#FFA828]/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
                 data-ripple-light="true">
                 Login
@@ -99,12 +99,7 @@ const Navber = () => {
                 Docs
               </a>
             </li>
-            <button
-              className="mb-2 block w-full rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
-              data-ripple-light="true">
-              <span>Buy Now</span>
-            </button>
+            
           </ul>
         </div>
       </nav>

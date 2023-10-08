@@ -12,7 +12,7 @@ const Teachers = () => {
         <div>
         <hr className="w-[400px]" />
         </div>
-        <img  className="" src="https://i.ibb.co/TvwsVqV/icons8-lotus-48.png" alt="" />
+        <img  src="https://i.ibb.co/sQ4GyS6/icons8-people-50.png" alt="" />
         <div>
         <hr className="w-[400px]" />
         </div>

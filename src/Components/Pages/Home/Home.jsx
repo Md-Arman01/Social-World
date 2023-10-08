@@ -3,13 +3,13 @@ import Footer from "./Footer/Footer";
 import Services from "./Services/Services";
 import Slider from "./Slider/Slider";
 import Teachers from "./Manager/Manager";
-import YogaReasons from "./YogaReasons/YogaReasons";
+import EventManagement from "./EventManagement/EvenManagement";
 
 const Home = () => {
     return (
         <div>
             <Slider></Slider>
-            <YogaReasons></YogaReasons>
+            <EventManagement></EventManagement>
             <Services></Services>
             <Teachers></Teachers>
             <Footer></Footer>

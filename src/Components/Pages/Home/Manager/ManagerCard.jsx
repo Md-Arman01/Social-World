@@ -81,7 +81,7 @@ const TeacherCard = () => {
           David Swenson
           </h4>
           <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
-          CEO / SocialWorld
+          CEO / Social World
           </p>
         </div>
       </div>

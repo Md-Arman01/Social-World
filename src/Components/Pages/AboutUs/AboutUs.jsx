@@ -17,7 +17,7 @@ const AboutUs = () => {
           <p className="text-[#C4D114] text-lg font-semibold mb-3">
             David Swenson
           </p>
-          <h1 className="text-6xl text-white mb-5">Yoga Studio Owner</h1>
+          <h1 className="text-6xl text-white mb-5">Social World Owner</h1>
           <div className="flex items-center gap-8 h-36">
             <p className="border border-[#8DD0D3] h-36"></p>
 

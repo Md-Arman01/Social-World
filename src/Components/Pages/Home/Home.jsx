@@ -2,7 +2,7 @@
 import Footer from "./Footer/Footer";
 import Services from "./Services/Services";
 import Slider from "./Slider/Slider";
-import Teachers from "./Teachars/Teachers";
+import Teachers from "./Manager/Manager";
 import YogaReasons from "./YogaReasons/YogaReasons";
 
 const Home = () => {

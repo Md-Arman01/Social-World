@@ -17,7 +17,7 @@ const Services = () => {
 
     <div>
       <h1 className="text-center font-medium text-5xl text-[#45445A] mb-5">
-      Our Services
+      Our <span className="text-[#97245F]">Services</span> 
       </h1>
       <div className="flex items-center gap-2 justify-center">
         <div>
@@ -28,7 +28,7 @@ const Services = () => {
         <hr className="w-[400px]" />
         </div>
       </div>
-      <p className="text-[#97245F] text-lg text-center">Choose Your Level and Focus</p>
+      <p className="text-[#97245F] text-lg text-center">Choose Your Event and Focus</p>
     </div>
     <div className="grid grid-cols-2 container mx-auto gap-5 my-10">
       {

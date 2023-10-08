@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import errorImage from '../../assets/errorPage.png'
 
 const ErrorPage = () => {
     const navigate = useNavigate()
@@ -12,7 +11,7 @@ const ErrorPage = () => {
             <div className='flex justify-center'>
             <button onClick={handleBack} className="absolute top-8 btn btn-outline normal-case">Go Back</button>
             </div>
-            <img className='w-full h-screen' src={errorImage} alt="" />
+            <img className='w-full h-screen' src='https://i.ibb.co/G0x8FVk/error-Page.png' alt="" />
         </div>
     );
 };

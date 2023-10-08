@@ -1,4 +1,7 @@
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
 
 const CardDetails = () => {
   const allData = useLoaderData();
@@ -14,7 +17,15 @@ const CardDetails = () => {
 
   return (
     <div className="container mx-auto mt-28">
-      <div className="flex gap-5 rounded-lg bg-base-100 shadow-xl">
+      <div
+      data-aos="zoom-in"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+       className="flex gap-5 rounded-lg bg-base-100 shadow-xl">
         <img className="w-[700px] h-[600px] object-cover rounded-lg" src={image} alt="" />
         <div className="flex items-center justify-center">
           <div className="space-y-5 px-5">

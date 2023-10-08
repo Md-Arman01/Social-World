@@ -4,6 +4,9 @@ import logo from "../../../../public/images/Logo.png";
 import Menu from "./Menu";
 import { useContext } from "react";
 import { AuthContext } from "../../ContextProvider/AuthContextProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
 
 const Navber = () => {
   const menuItems = <Menu></Menu>;

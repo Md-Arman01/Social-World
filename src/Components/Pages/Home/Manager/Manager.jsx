@@ -1,9 +1,19 @@
 import Marquee from "react-fast-marquee";
 import TeacherCard from "./ManagerCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
 
 const Teachers = () => {
   return (
-    <div className="my-20">
+    <div data-aos="zoom-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+     className="my-20">
       <div>
       <h1 className="text-center font-semibold text-5xl text-[#45445A] mb-5">
       Our Team <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Manager</span>

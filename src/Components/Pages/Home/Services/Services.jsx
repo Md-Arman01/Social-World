@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import ServicesCard from "./ServicesCard/ServicesCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
 
 const Services = () => {
 
@@ -15,7 +18,13 @@ const Services = () => {
     <>
     <div className="my-20">
 
-    <div>
+    <div data-aos="flip-left"
+data-aos-offset="200"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-mirror="true"
+data-aos-once="false">
       <h1 className="text-center font-semibold text-5xl text-[#45445A] mb-5">
       Our <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Services</span> 
       </h1>

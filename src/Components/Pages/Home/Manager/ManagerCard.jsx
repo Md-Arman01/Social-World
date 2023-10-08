@@ -4,7 +4,7 @@ const TeacherCard = () => {
       {/* card 1 */}
       <div className="relative flex w-96 flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
         <div className="mx-auto mt-7">
-          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/VmQxrPB/young-happy-man-standing-isolated.jpg" />
+          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/prG5fF3/Pi7-Image-young-happy-man-standing-isolated.jpg" />
         </div>
         <div className="p-6 text-center">
           <h4 className="mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -18,7 +18,7 @@ const TeacherCard = () => {
       {/* card 2 */}
       <div className="relative flex w-96 flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
         <div className="mx-auto mt-7">
-          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/ng7XjT0/replicate-prediction-zvcm2ubb4qsltvoeavdvewzqrm.png" />
+          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/417KGDd/Pi7-Image-replicate-prediction-zvcm2ubb4qsltvoeavdvewzqrm.png" />
         </div>
         <div className="p-6 text-center">
           <h4 className="mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -32,7 +32,7 @@ const TeacherCard = () => {
       {/* card 3 */}
       <div className="relative flex w-96 flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
         <div className="mx-auto mt-7">
-          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/bmwRhw9/replicate-prediction-65twwfzb7xlep4qucdz3emsuo4.png" />
+          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/LRmfVfZ/Pi7-Image-replicate-prediction-65twwfzb7xlep4qucdz3emsuo4.png" />
         </div>
         <div className="p-6 text-center">
           <h4 className="mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -46,11 +46,11 @@ const TeacherCard = () => {
       {/* card 4 */}
       <div className="relative flex w-96 flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
         <div className="mx-auto mt-7">
-          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/2gpZsQp/man-posing-indoors-climbing-arena.jpg" />
+          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/DfK0JYY/Pi7-Image-man-posing-indoors-climbing-arena.jpg" />
         </div>
         <div className="p-6 text-center">
           <h4 className="mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-          ichard Freeman
+          Ichard Freeman
           </h4>
           <p className="block bg-gradient-to-r from-[#FF4804] to-[#FF4804] bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
             Senior Manager
@@ -60,7 +60,7 @@ const TeacherCard = () => {
       {/* card 5 */}
       <div className="relative flex w-96 flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
         <div className="mx-auto mt-7">
-          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/gWFBwr1/replicate-prediction-dmjf3gbbgw4l6dk6qjfy462sbe.png" />
+          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/FhDmCVv/Pi7-Image-replicate-prediction-dmjf3gbbgw4l6dk6qjfy462sbe.png" />
         </div>
         <div className="p-6 text-center">
           <h4 className="mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -74,7 +74,7 @@ const TeacherCard = () => {
       {/* card 6 */}
       <div className="relative flex w-96 flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
         <div className="mx-auto mt-7">
-          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/MZNgCPT/front-view-man-using-sign-language.jpg" />
+          <img className="w-48 h-48 rounded-full object-cover" src="https://i.ibb.co/gR684n3/Pi7-Image-front-view-man-using-sign-language.jpg" />
         </div>
         <div className="p-6 text-center">
           <h4 className="mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

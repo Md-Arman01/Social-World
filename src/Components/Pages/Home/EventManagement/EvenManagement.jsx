@@ -1,8 +1,22 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
+
+
+
 const EventManagement = () => {
   return (
     <div className="bg-[#F5F6F7] h-[700px] flex justify-center items-center">
         <div>
-      <h1 className="text-center font-semibold text-5xl text-[#45445A] mb-5">
+      <h1
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+       className="text-center font-semibold text-5xl text-[#45445A] mb-5">
       Events <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Management</span> 
       </h1>
       <div className="grid grid-cols-3 gap-10 items-center container mx-auto">
@@ -10,7 +24,15 @@ const EventManagement = () => {
         <div className="flex  justify-end">
               {/* 1st content */}
           <div className="space-y-10">
-          <div className="flex gap-5">
+          <div
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+           className="flex gap-5">
             <div className="text-right">
               <h1 className="text-2xl font-semibold mb-5">
                 <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Friendly</span> Team
@@ -28,7 +50,15 @@ const EventManagement = () => {
             </div>
           </div>
           {/* 2nd content */}
-          <div className="flex gap-5">
+          <div
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+           className="flex gap-5">
             <div className="text-right">
               <h1 className="text-2xl font-semibold mb-5">
               <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Unique</span> Scenario
@@ -49,7 +79,15 @@ const EventManagement = () => {
           
         </div>
         {/* center container */}
-        <div>
+        <div 
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        >
           <img
             src="https://i.ibb.co/X31rCh0/replicate-prediction-puvj62rbzllt6antjheduq3dgq-removebg-preview.png"
             alt=""
@@ -58,7 +96,15 @@ const EventManagement = () => {
         {/* right side container */}
         <div className="space-y-10">
           {/* 1st content */}
-          <div className="flex gap-5">
+          <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+           className="flex gap-5">
             <div className="w-16">
               <img
                 className="bg-[#FF4804] p-2 rounded-full"
@@ -76,7 +122,16 @@ const EventManagement = () => {
             </div>
           </div>
           {/* 2nd content */}
-          <div className="flex gap-5">
+          <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          
+          className="flex gap-5">
             <div className="w-16">
               <img
                 className="bg-[#FF4804] p-2 rounded-full"

@@ -1,5 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../../ContextProvider/AuthContextProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init();
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
@@ -11,7 +14,15 @@ const Profile = () => {
       {/* card container  */}
       <div className="flex  gap-10">
         {/* Profile Card */}
-        <div className="card w-96 bg-base-100 shadow-xl h-fit">
+        <div
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+         className="card w-96 bg-base-100 shadow-xl h-fit">
           <img
             src={photoURL}
             alt="Shoes"
@@ -35,7 +46,15 @@ const Profile = () => {
           </div>
         </div>
         {/* update card */}
-        <div className="card flex-1 bg-base-100 shadow-xl p-4">
+        <div
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+         className="card flex-1 bg-base-100 shadow-xl p-4">
           <h1 className="text-[#3D506E] text-lg font-semibold mb-3">Update Profile</h1>
           <hr />
           <div className="grid grid-cols-2 gap-5 my-5">

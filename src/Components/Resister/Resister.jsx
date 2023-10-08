@@ -1,17 +1,16 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../ContextProvider/AuthContextProvider";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 import { Link, useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.confiq";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
-
 const Resister = () => {
-  const navigate = useNavigate()
-  const [resisterError, setResisterError] = useState('');
+  const navigate = useNavigate();
+  const [resisterError, setResisterError] = useState("");
   const { createUser } = useContext(AuthContext);
   const handleResister = (e) => {
     e.preventDefault();
@@ -20,51 +19,58 @@ const Resister = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const checked = e.target.checkbox.checked;
-    setResisterError('')
+    setResisterError("");
 
-    if(password.length < 6) {
-      setResisterError('Please give me minimum 6 characters')
-      return
-    }else if(!/[A-Z]/.test(password)){
-      setResisterError('Please give me minimum one capital letter')
-      return
-    }else if(!/[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\|]/.test(password)){
-      setResisterError('Please give me minimum one special character')
-      return
-    }else if (!checked) {
+    if (password.length < 6) {
+      setResisterError("Please give me minimum 6 characters");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setResisterError("Please give me minimum one capital letter");
+      return;
+    } else if (!/[!@#$%^&*()_+~`\-={}[\]:;"'<>,.?/\\|]/.test(password)) {
+      setResisterError("Please give me minimum one special character");
+      return;
+    } else if (!checked) {
       setResisterError("Please accept our Terms and Condition");
       return;
     }
-    
+
     createUser(email, password)
       .then((result) => {
         updateProfile(auth.currentUser, {
-          displayName: name, photoURL: photoURL
-        }).then(() => {
-          // Profile updated!
-          // ...
-        }).catch((error) => {
-          // An error occurred
-          // ...
-        });
-        swal("Resister successfully!", "You can access all facilities", "success");
-        navigate('/')
+          displayName: name,
+          photoURL: photoURL,
+        })
+          .then(() => {
+            // Profile updated!
+            // ...
+          })
+          .catch((error) => {
+            // An error occurred
+            // ...
+          });
+        swal(
+          "Resister successfully!",
+          "You can access all facilities",
+          "success"
+        );
+        navigate("/");
       })
       .catch((error) => {
-        setResisterError(error.message)
+        setResisterError(error.message);
       });
   };
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center mt-14 md:mt-20 lg:mt-28">
       <div
-      data-aos="zoom-in"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-       className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-[#FFA828] to-[#FF4804] bg-clip-border text-white shadow-lg shadow-[#FFA828]/40">
           <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
             Register your account
@@ -120,10 +126,9 @@ const Resister = () => {
               </label>
             </div>
             <div className="-ml-2.5">
-              {
-                resisterError &&
-              <h1 className="text-red-500 px-5">{resisterError}</h1>
-              }
+              {resisterError && (
+                <h1 className="text-red-500 px-5">{resisterError}</h1>
+              )}
               <div className="inline-flex items-center">
                 <label
                   className="relative flex cursor-pointer items-center rounded-full p-3"
@@ -155,7 +160,6 @@ const Resister = () => {
                   Accept Term & Conditions
                 </label>
               </div>
-              
             </div>
           </div>
           <div className="p-6 pt-0">
@@ -167,14 +171,13 @@ const Resister = () => {
             </button>
             <p className="mt-6 flex justify-center font-sans text-sm font-light leading-normal text-inherit antialiased">
               have an account?
-            <Link
-              to="/login"
-              className="ml-1 block font-sans text-sm font-bold leading-normal text-[#FFA828] antialiased">
-              Login
-            </Link>
-          </p>
+              <Link
+                to="/login"
+                className="ml-1 block font-sans text-sm font-bold leading-normal text-[#FFA828] antialiased">
+                Login
+              </Link>
+            </p>
           </div>
-          
         </form>
       </div>
     </div>

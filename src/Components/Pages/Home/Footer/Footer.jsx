@@ -1,22 +1,11 @@
-import logo from '../../../../../public/images/logo.png'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-AOS.init();
-
-
+import logo from "../../../../../public/images/logo.png";
 
 const Footer = () => {
   return (
     <div>
-      <footer data-aos="fade-up"
-data-aos-offset="200"
-data-aos-delay="50"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-data-aos-mirror="true"
-data-aos-once="false"
-       className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-        <img className='w-32' src={logo} alt="" />
+      <footer
+        className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <img className="w-32" src={logo} alt="" />
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>

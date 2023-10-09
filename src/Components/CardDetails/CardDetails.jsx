@@ -16,15 +16,13 @@ const CardDetails = () => {
   };
 
   return (
-    <div className="container mx-auto lg:mt-28">
+    <div className="container mx-auto lg:mt-28 px-4 lg:px-0">
       <div
         data-aos="zoom-in"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="500"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
         className="lg:flex gap-5 rounded-lg bg-base-100 shadow-xl px-4 lg:px-0">
         <img
           className="lg:w-[700px] lg:h-[600px] my-5 lg:my-0 mx-auto object-cover rounded-xl md:rounded-lg"

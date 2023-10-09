@@ -19,10 +19,10 @@ const Services = () => {
           data-aos="flip-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false">
+          
+          >
           <h1 className="text-center font-semibold text-3xl md:text-4xl lg:text-5xl text-[#45445A] lg:mb-5">
             Our{" "}
             <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">

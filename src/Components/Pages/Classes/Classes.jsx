@@ -2,7 +2,7 @@
 
 const Classes = () => {
     return (
-        <div >
+        <div  className="overflow-x-hidden">
             <h1>this is classes page</h1>
         </div>
     );

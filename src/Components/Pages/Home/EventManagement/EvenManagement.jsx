@@ -12,10 +12,10 @@ const EventManagement = () => {
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-delay="50"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
+      
+      
        className="text-center font-semibold text-3xl md:text-4xl lg:text-5xl text-[#45445A] mb-5">
       Events <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Management</span> 
       </h1>
@@ -28,10 +28,10 @@ const EventManagement = () => {
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          
+          
            className="flex flex-col-reverse md:flex-row gap-5 px-4 md:px-0">
             <div className="text-center md:text-right">
               <h1 className="text-2xl font-semibold mb-5">
@@ -54,10 +54,10 @@ const EventManagement = () => {
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          
+          
            className="flex flex-col-reverse md:flex-row gap-5 px-4 md:px-0">
             <div className="text-center md:text-right">
               <h1 className="text-2xl font-semibold mb-5">
@@ -83,10 +83,10 @@ const EventManagement = () => {
         data-aos="zoom-in"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        
+        
         >
           <img
             src="https://i.ibb.co/X31rCh0/replicate-prediction-puvj62rbzllt6antjheduq3dgq-removebg-preview.png"
@@ -100,10 +100,10 @@ const EventManagement = () => {
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          
+          
            className="md:flex gap-5 px-4 md:px-0">
             <div className="w-16 mb-5 md:mb-0 mx-auto md:mx-0">
               <img
@@ -126,10 +126,10 @@ const EventManagement = () => {
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          
+          
           
           className="md:flex gap-5 px-4 md:px-0">
             <div className="w-16 mb-5 md:mb-0 mx-auto md:mx-0">

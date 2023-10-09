@@ -4,9 +4,9 @@ const LoadingPage = () => {
   return (
     <div className="flex justify-center items-center mt-10 md:mt-16 lg:mt-28">
       <ContentLoader
-      className="w-[2000px] md:h-[600px]"
-        width={700}
-        height={300}
+      className="lg:w-[2000px] md:h-[600px]"
+        // width={700}
+        // height={300}
         viewBox="0 0 700 300"
         backgroundColor="#f5f5f5"
         foregroundColor="#dbdbdb">

@@ -13,8 +13,7 @@ const ServicesCard = ({ services }) => {
       data-aos-delay="50"
       data-aos-duration="500"
       data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false">
+      >
       <div className="relative flex flex-col md:flex-row md:h-[350px] rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0 p-3 md:p-0 md:w-2/4 shrink-0 overflow-hidden rounded-xl md:rounded-r-none bg-white bg-clip-border text-gray-700">
           <img src={image} alt="image" className="h-full w-full rounded-xl md:rounded-none object-cover" />

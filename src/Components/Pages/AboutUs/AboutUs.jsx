@@ -6,16 +6,16 @@ AOS.init();
 const AboutUs = () => {
   return (
     <>
-      {/* banner section */}
+    <div className="overflow-x-hidden">
+        {/* banner section */}
       <div className="lg:flex">
         <div
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false">
+          data-aos-duration="500"
+          
+          >
           <img
             className="lg:w-[800px]"
             src="https://i.ibb.co/gR684n3/Pi7-Image-front-view-man-using-sign-language.jpg"
@@ -26,25 +26,22 @@ const AboutUs = () => {
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="py-10 md:py-[120px] px-10 md:px-[96px] bg-[#393651] flex-1">
           <div
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false">
+            data-aos-duration="500"
+            >
             <p className="text-white text-lg font-semibold mb-3">
               David Swenson
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-5">
-              Social World <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">
-                 Owner
+              Social World{" "}
+              <span className="bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">
+                Owner
               </span>
             </h1>
             <div className="flex items-center gap-8 h-28 md:h-36">
@@ -65,10 +62,8 @@ const AboutUs = () => {
         data-aos="flip-left"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-duration="500"
+        
         className="my-5 md:my-9 lg:my-14">
         <h1 className="text-center font-semibold text-3xl md:text-4xl lg:text-5xl  text-[#45445A] lg:mb-5">
           Our Team{" "}
@@ -94,16 +89,14 @@ const AboutUs = () => {
         </p>
       </div>
       {/* card container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-4 lg:px-0 container mx-auto my-5 md:my-10 lg:my-20">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-4 lg:px-0 container mx-auto my-5 md:my-10 lg:my-20">
         {/* card 1 */}
         <div
           data-aos="fade-down-right"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="relative flex  flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
           <div className="mx-auto mt-7">
             <img
@@ -125,10 +118,8 @@ const AboutUs = () => {
           data-aos="fade-down"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="relative flex  flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
           <div className="mx-auto mt-7">
             <img
@@ -150,10 +141,8 @@ const AboutUs = () => {
           data-aos="fade-down-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="relative flex  flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
           <div className="mx-auto mt-7">
             <img
@@ -175,10 +164,8 @@ const AboutUs = () => {
           data-aos="fade-up-right"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="relative flex  flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
           <div className="mx-auto mt-7">
             <img
@@ -200,10 +187,8 @@ const AboutUs = () => {
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="relative flex  flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
           <div className="mx-auto mt-7">
             <img
@@ -225,10 +210,8 @@ const AboutUs = () => {
           data-aos="fade-up-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-duration="500"
+          
           className="relative flex  flex-col rounded-xl bg-[#f8f6ee] bg-clip-border text-gray-700 shadow-md">
           <div className="mx-auto mt-7">
             <img
@@ -248,6 +231,8 @@ const AboutUs = () => {
       </div>
       {/* footer section */}
       <Footer></Footer>
+    </div>
+      
     </>
   );
 };

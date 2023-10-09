@@ -8,7 +8,7 @@ const Profile = () => {
   const { user } = useContext(AuthContext);
   const { photoURL, displayName, email } = user || {};
   return (
-    <div className="my-7 md:my-12 container mx-auto">
+    <div className="overflow-x-hidden my-7 md:my-12 container mx-auto">
       <div className="flex justify-center lg:justify-start mb-2">
         <div className="text-center lg:text-left">
       <h1 className="text-sm text-[#858EA8] font-semibold ">OVERVIEW</h1>
@@ -23,9 +23,9 @@ const Profile = () => {
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          
+          
+          
           className="card lg:w-96 bg-base-100 border shadow-md h-fit">
           <img
             src={photoURL}
@@ -55,9 +55,9 @@ const Profile = () => {
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          
+          
+          
           className="card flex-1 bg-base-100 border shadow-md p-4">
           <h1 className="text-[#3D506E] text-lg font-semibold mb-3">
             Update Profile

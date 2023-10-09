@@ -36,7 +36,7 @@ const Slider = () => {
               data-aos-once="false"
                className="max-w-md">
                 <h1 data-aos="fade-up" className="mb-5 text-3xl md:text-5xl font-semibold md:font-bold bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Weddings</h1>
-                <p className="mb-5">
+                <p className="mb-5 text-sm md:text-lg">
                 A wedding is a formal ceremony that marks the union of two individuals in marriage. 
                 </p>
               </div>
@@ -60,9 +60,9 @@ const Slider = () => {
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-               className="max-w-md">
+              className="max-w-md">
                 <h1 className="mb-5 text-3xl md:text-5xl font-semibold md:font-bold bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Birthday Parties</h1>
-                <p className="mb-5">
+                <p className="mb-5 text-sm md:text-lg">
                 A birthday party is a joyful celebration held to mark the anniversary of a person's birth. 
                 </p>
               </div>
@@ -88,7 +88,7 @@ const Slider = () => {
               data-aos-once="false"
                className="max-w-md">
                 <h1 className="mb-5 text-3xl md:text-5xl font-semibold md:font-bold bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Anniversaries</h1>
-                <p className="mb-5">
+                <p className="mb-5 text-sm md:text-lg">
                 An anniversary is a special and meaningful occasion that commemorates a significant event or milestone, such as a wedding, the founding of a company, or the start of a relationship. 
                 </p>
               </div>
@@ -114,7 +114,7 @@ const Slider = () => {
               data-aos-once="false"
                className="max-w-md">
                 <h1 className="mb-5 text-3xl md:text-5xl font-semibold md:font-bold bg-gradient-to-r from-[#FFA828] to-[#FF4804] text-transparent bg-clip-text">Retirement Parties</h1>
-                <p className="mb-5">
+                <p className="mb-5 text-sm md:text-lg">
                 A retirement party is a festive event held to honor an individual who is retiring from their career or professional life after years of dedicated work. 
                 </p>
               </div>

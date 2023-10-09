@@ -50,6 +50,7 @@ const AuthContextProvider = ({children}) => {
 
     const contextInfo = {
         user,
+        setUser,
         createUser,
         loginUser,
         googleLogin,

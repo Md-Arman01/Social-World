@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../ContextProvider/AuthContextProvider";
+import Footer from "../Home/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
@@ -8,6 +9,7 @@ const Profile = () => {
   const { user } = useContext(AuthContext);
   const { photoURL, displayName, email } = user || {};
   return (
+    <>
     <div className="overflow-x-hidden my-7 md:my-12 container mx-auto">
       <div className="flex justify-center lg:justify-start mb-2">
         <div className="text-center lg:text-left">
@@ -140,6 +142,8 @@ const Profile = () => {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

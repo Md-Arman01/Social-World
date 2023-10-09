@@ -5,6 +5,7 @@ import { BsGoogle } from "react-icons/bs";
 import { BiLogoGithub } from "react-icons/bi";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Footer from "../Pages/Home/Footer/Footer";
 AOS.init();
 
 const Login = () => {
@@ -50,6 +51,9 @@ const Login = () => {
   };
 
   return (
+    <div>
+
+    
     <div className="flex justify-center mt-14 md:mt-20 lg:mt-28 px-5 md:px-0">
       <div
         data-aos="zoom-in"
@@ -125,6 +129,11 @@ const Login = () => {
           </Link>
         </p>
       </div>
+    </div>
+    <div className="mt-10 md:mt-14 lg:mt-24">
+      <Footer></Footer>
+    </div>
+
     </div>
   );
 };

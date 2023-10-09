@@ -2,13 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Components/Layout/Layout";
 import Home from "../Components/Pages/Home/Home";
 import Profile from "../Components/Pages/Profile/Profile";
-import Classes from "../Components/Pages/Classes/Classes";
 import Login from "../Components/Login/Login";
 import Resister from "../Components/Resister/Resister";
 import CardDetails from "../Components/CardDetails/CardDetails";
 import PrivateRoutes from "../Components/PrivateRoutes/PrivateRoutes";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import AboutUs from "../Components/Pages/AboutUs/AboutUs";
+import Contact from "../Components/Pages/Contact/Contact";
 
 const Router = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ const Router = createBrowserRouter([
         path: "/classes",
         element: (
           <PrivateRoutes>
-            <Classes></Classes>
+            <Contact></Contact>
           </PrivateRoutes>
         ),
       },

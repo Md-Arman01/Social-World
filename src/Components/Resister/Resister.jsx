@@ -6,6 +6,7 @@ import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.confiq";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Footer from "../Pages/Home/Footer/Footer";
 AOS.init();
 
 const Resister = () => {
@@ -63,15 +64,15 @@ const Resister = () => {
       });
   };
   return (
+    <div>
+
+    
     <div className=" flex justify-center mt-14 md:mt-20 lg:mt-28 px-5 md:px-0">
       <div
         data-aos="zoom-in"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="500"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
         className="relative flex w-full md:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 mb-4 grid h-20 md:h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-[#FFA828] to-[#FF4804] bg-clip-border text-white shadow-lg shadow-[#FFA828]/40">
           <h3 className="block font-sans text-xl md:text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
@@ -182,6 +183,10 @@ const Resister = () => {
           </div>
         </form>
       </div>
+    </div>
+    <div className="mt-10 md:mt-14 lg:mt-24">
+    <Footer></Footer>
+    </div>
     </div>
   );
 };
